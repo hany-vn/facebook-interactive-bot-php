@@ -39,20 +39,20 @@
     /**
      * Loop posts
     */
-    foreach($posts as $Post) {
+    foreach($posts as $post) {
 
         /** Like post */
-        $Reaction = $Facebook->Reaction($Post);
-        if( gettype($Reaction) == 'array' && count($Reaction) > 0 ) {
-            echo json_encode($Reaction, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
+        $reaction = $Facebook->Reaction($post);
+        if( gettype($reaction) == 'array' && count($reaction) > 0 ) {
+            echo json_encode($reaction, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
         }
 
         echo '<br />';
 
         /** Comment post */
-        $Comment = $Facebook->Comment($Post);
-        if( gettype($Comment) == 'array' && count($Comment) > 0 ) {
-            echo json_encode($Comment, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
+        $comment = $Facebook->Comment($post);
+        if( gettype($comment) == 'array' && count($comment) > 0 ) {
+            echo json_encode($comment, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
         }
 
         echo '<hr />';
