@@ -33,13 +33,13 @@
  $Facebook->limitPost = 10;
 
  /** Get new post */
- $Posts = $Facebook->getNewPosts();
+ $posts = $Facebook->getNewPosts();
 
- if( gettype($Posts) == 'array' && count($Posts) > 0 ) {
+ if( gettype($posts) == 'array' && count($posts) > 0 ) {
     /**
      * Loop posts
     */
-    foreach($Posts as $Post) {
+    foreach($posts as $Post) {
 
         /** Like post */
         $Reaction = $Facebook->Reaction($Post);
