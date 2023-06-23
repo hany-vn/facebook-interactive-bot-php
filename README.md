@@ -1,15 +1,6 @@
 # Facebook interactive BOT
 Automatically interact with posts on facebook
 
-## Author
-Author of the project
-```author
-Name: ID Thiên Ân
-Email: todi306@gmail.com
-Github: https://github.com/todivn
-Facebook: https://www.facebook.com/idthienan
-```
-
 ## Salient features
 Outstanding function of the project
 ```features
